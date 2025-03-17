@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Generar poema",
+    "tags": ["Creativo", "Texto"],
+    "language": "Español",
+    "prompt": "Escribe un poema sobre la naturaleza y la calma."
+  },
+  {
+    "title": "Responder email",
+    "tags": ["Formal", "Negocios"],
+    "language": "Español",
+    "prompt": "Redacta una respuesta profesional a un correo de solicitud de información."
+  }
+]
