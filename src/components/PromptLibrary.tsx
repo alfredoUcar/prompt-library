@@ -33,6 +33,18 @@ export default function PromptLibrary() {
   }, []);
 
   useEffect(() => {
+    // Update search state when navigating history
+    const handlePopState = () => {
+      const params = new URLSearchParams(window.location.search);
+      setSearch(params.get("search") || "");
+      setFilterTags(params.get("tags")?.split(",") || []);
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
+
+  useEffect(() => {
     // Update URL when filters change
     const params = new URLSearchParams();
     if (search) params.set("search", search);
