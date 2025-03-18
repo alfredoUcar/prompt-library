@@ -101,6 +101,14 @@ export default function PromptLibrary() {
       }`;
     }
   };
+
+  const promptDisplay = (prompt: string) => {
+    if (prompt.length > 100) {
+      return prompt.slice(0, 90) + "...";
+    }
+
+    return prompt;
+  };
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">Prompt Library</h1>
@@ -169,7 +177,7 @@ export default function PromptLibrary() {
                   </span>
                 ))}
               </div>
-              <p className="mt-2">{prompt.prompt}</p>
+              <p className="mt-2">{promptDisplay(prompt.prompt)}</p>
               <Button
                 className="mt-2"
                 onClick={() => copyToClipboard(prompt.prompt)}
