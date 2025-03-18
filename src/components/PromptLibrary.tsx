@@ -6,13 +6,17 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import prompts from "@/data/prompts.json";
+import languages from "@/data/languages.json";
 
 interface Prompt {
   title: string;
   tags: string[];
-  language: string;
+  languageInput: string;
+  languageOutput: string;
   prompt: string;
 }
+
+type LanguageCode = keyof typeof languages;
 
 export default function PromptLibrary() {
   const router = useRouter();
@@ -88,6 +92,15 @@ export default function PromptLibrary() {
       !filterTags.includes(tag.toLowerCase())
   );
 
+  const languageDisplay = (source: string, output: string) => {
+    if (source === output) {
+      return languages[source as LanguageCode] || source;
+    } else {
+      return `from ${languages[source as LanguageCode] || source} to ${
+        languages[output as LanguageCode] || output
+      }`;
+    }
+  };
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">Prompt Library</h1>
@@ -141,7 +154,10 @@ export default function PromptLibrary() {
           <Card key={index} className="p-4">
             <CardContent>
               <h2 className="text-xl font-semibold">{prompt.title}</h2>
-              <p className="text-sm text-gray-500">{prompt.language}</p>
+              <p className="text-sm text-gray-500">
+                Language:{" "}
+                {languageDisplay(prompt.languageInput, prompt.languageOutput)}
+              </p>
               <p className="mt-2">{prompt.prompt}</p>
               <div className="mt-2 flex gap-2">
                 {prompt.tags.map((tag) => (

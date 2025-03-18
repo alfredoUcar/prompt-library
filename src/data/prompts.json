@@ -1,14 +1,72 @@
 [
   {
-    "title": "Generar poema",
-    "tags": ["Creativo", "Texto"],
-    "language": "es-ES",
-    "prompt": "Escribe un poema sobre la naturaleza y la calma."
+    "title": "Blog Post Generator",
+    "tags": ["writing", "content creation", "blog"],
+    "languageInput": "en",
+    "languageOutput": "en",
+    "prompt": "Act as copywriter and generate a blog post based on my inputs. Sequentially ask me questions to provide topic, key points, tone and length before building the post."
   },
   {
-    "title": "Responder email",
-    "tags": ["Formal", "Negocios"],
-    "language": "es-ES",
-    "prompt": "Redacta una respuesta profesional a un correo de solicitud de información."
+    "title": "Code Debugger",
+    "tags": ["programming", "code debugging", "coding"],
+    "languageInput": "en",
+    "languageOutput": "en",
+    "prompt": "Act as a code debugger. Wait for a code snippet and provide feedback. Explain your guesses about code language(s), purpose and potential issues in a clean and concise manner. Let the user know if you need more information or ask for clarification or solutions. Once the user confirms \"debugging is complete\" wait for the next code snippet."
+  },
+  {
+    "title": "Story Idea Generator",
+    "tags": ["writing", "creative writing", "fiction"],
+    "languageInput": "en",
+    "languageOutput": "en",
+    "prompt": "Generate a unique story idea based on a genre or theme of your choice. Let me know the details!"
+  },
+  {
+    "title": "Spanish Translation",
+    "tags": ["language", "translation", "Spanish"],
+    "languageInput": "en",
+    "languageOutput": "es",
+    "prompt": "Act as an English-to-Spanish translator for casual conversations. Wait the user to provide a text to translate"
+  },
+  {
+    "title": "Social Media Caption Generator",
+    "tags": ["marketing", "social media", "content creation"],
+    "languageInput": "en",
+    "languageOutput": "en",
+    "prompt": "Create an engaging social media caption. Describe the image or content you'd like to post about."
+  },
+  {
+    "title": "Fitness Routine Plan",
+    "tags": ["health", "fitness", "workout plan"],
+    "languageInput": "en",
+    "languageOutput": "en",
+    "prompt": "Create a personalized workout plan. Let me know what you need from me to get started. Do questions sequentially."
+  },
+  {
+    "title": "JavaScript Function Explanation",
+    "tags": ["programming", "JavaScript", "education"],
+    "languageInput": "en",
+    "languageOutput": "en",
+    "prompt": "Provide a JavaScript function you'd like me to explain and improve."
+  },
+  {
+    "title": "Email Draft",
+    "tags": ["business", "communication", "email writing"],
+    "languageInput": "en",
+    "languageOutput": "en",
+    "prompt": "Draft a professional email. Share the recipient's details, the purpose of the email, and any key points to include."
+  },
+  {
+    "title": "Poem Generator",
+    "tags": ["writing", "poetry", "creative writing"],
+    "languageInput": "en",
+    "languageOutput": "en",
+    "prompt": "Write a poem based on a mood or theme of your choice. Let me know what vibe you're aiming for."
+  },
+  {
+    "title": "Resume Summary Generator",
+    "tags": ["career", "resume writing", "professional"],
+    "languageInput": "en",
+    "languageOutput": "en",
+    "prompt": "Generate a concise resume summary. Provide details about your experience, skills, and career goals."
   }
 ]
