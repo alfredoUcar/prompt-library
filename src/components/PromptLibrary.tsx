@@ -158,7 +158,6 @@ export default function PromptLibrary() {
                 Language:{" "}
                 {languageDisplay(prompt.languageInput, prompt.languageOutput)}
               </p>
-              <p className="mt-2">{prompt.prompt}</p>
               <div className="mt-2 flex gap-2">
                 {prompt.tags.map((tag) => (
                   <span
@@ -170,6 +169,7 @@ export default function PromptLibrary() {
                   </span>
                 ))}
               </div>
+              <p className="mt-2">{prompt.prompt}</p>
               <Button
                 className="mt-2"
                 onClick={() => copyToClipboard(prompt.prompt)}
