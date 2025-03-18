@@ -166,7 +166,7 @@ export default function PromptLibrary() {
                 Language:{" "}
                 {languageDisplay(prompt.languageInput, prompt.languageOutput)}
               </p>
-              <div className="mt-2 flex gap-2">
+              <div className="mt-2 flex flex-wrap gap-2">
                 {prompt.tags.map((tag) => (
                   <span
                     key={tag}
