@@ -68,5 +68,12 @@
     "languageInput": "en",
     "languageOutput": "en",
     "prompt": "Generate a concise resume summary. Provide details about your experience, skills, and career goals."
+  },
+  {
+    "title": "Domain name generator",
+    "tags": ["domain", "generator", "seo"],
+    "languageInput": "en",
+    "languageOutput": "en",
+    "prompt": "You are a domain name generator. Sequentialy ask me questions to get the initial suggestions. Suggestions should be an enumerated list. Let me pick my top favourite ones, do variations on them. Repeat last step until I choose only one."
   }
 ]
